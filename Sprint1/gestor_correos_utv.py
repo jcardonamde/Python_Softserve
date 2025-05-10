@@ -1,4 +1,6 @@
 """
+Ejercicio Sprint1: Validador y Gestor de Correos Electrónicos para Biblioteca Universitaria
+
 Gestor de Correos Electrónicos - Biblioteca Universidad Tecnológica del Valle
 Autores: Jonathan Cardona Calderon - Sandra Liliana Zapata Gallón
 """

@@ -62,11 +62,6 @@ python gestor_correos.py
 
 ---
 
-## 📁 Estructura del código
-gestor_correos/
-├── gestor_correos.py   # Archivo principal con la lógica de la aplicación
-└── README.md           # Documentación del proyecto
-
 ## 📄 Licencia
 Este proyecto ha sido desarrollado con fines académicos para el Bootcamp de Python Softserve. 
 Puedes usar, modificar y distribuir libremente este código para fines educativos o personales.
