@@ -38,6 +38,18 @@ def registrar_correo():
     else:
         print("Correo no válido. Verifique el formato y dominio.")
 
+def ver_correos_registrados():
+    """
+    Muestra todos los correos registrados con su tipo.
+    """
+    if not correos_registrados:
+        print("No hay correos registrados aún.")
+        return
+
+    print("\n--- Lista de Correos Registrados ---")
+    for i, item in enumerate(correos_registrados, start=1):
+        print(f"{i}. {item['correo']} ({item['tipo']})")
+
 def main():
     while True:
         mostrar_menu()
@@ -46,7 +58,7 @@ def main():
         if opcion == "1":
             registrar_correo()
         elif opcion == "2":
-            print("Funcionalidad de visualización aún no implementada.")
+            ver_correos_registrados()
         elif opcion == "3":
             print("Funcionalidad de búsqueda aún no implementada.")
         elif opcion == "4":
@@ -55,5 +67,7 @@ def main():
         else:
             print("Opción no válida. Intente de nuevo.")
 
+# Punto de entrada del programa
+# Se asegura de que el script se ejecute solo si es el principal
 if __name__ == "__main__":
     main()
