@@ -45,9 +45,12 @@ Aplicación de consola desarrollada en Python que permite registrar, validar, cl
 ```bash
 python gestor_correos.py
 
+```
 4. Sigue las instrucciones en pantalla para registrar, ver o buscar correos.
 
 <br>
+
+---
 
 ## 🧪 Ejemplos de correos válidos
 | Correo electrónico                  | Clasificación |
@@ -56,6 +59,8 @@ python gestor_correos.py
 | `maria.garcia@utv.edu.co`           | Docente       |
 | `luis_mendez@estudiante.utv.edu.co` | Estudiante    |
 | `doc.castro@utv.edu.co`             | Docente       |
+
+---
 
 ## 📁 Estructura del código
 gestor_correos/
