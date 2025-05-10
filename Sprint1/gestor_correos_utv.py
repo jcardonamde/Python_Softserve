@@ -80,7 +80,7 @@ def main():
         elif opcion == "2":
             ver_correos_registrados()
         elif opcion == "3":
-            buscar_correo
+            buscar_correo()
         elif opcion == "4":
             print("Gracias por usar el gestor de correos. ¡Hasta pronto!")
             break
