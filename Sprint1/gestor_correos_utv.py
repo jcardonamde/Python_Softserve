@@ -50,6 +50,24 @@ def ver_correos_registrados():
     for i, item in enumerate(correos_registrados, start=1):
         print(f"{i}. {item['correo']} ({item['tipo']})")
 
+def buscar_correo():
+    """
+    Permite buscar un correo por texto parcial o completo.
+    """
+    termino = input("Ingrese parte o todo el correo a buscar: ").strip().lower()
+
+    resultados = [
+        correo for correo in correos_registrados
+        if termino in correo["correo"]
+    ]
+
+    if resultados:
+        print(f"\nResultados encontrados ({len(resultados)}):")
+        for i, item in enumerate(resultados, start=1):
+            print(f"{i}. {item['correo']} ({item['tipo']})")
+    else:
+        print("No se encontraron coincidencias.")
+
 def main():
     while True:
         mostrar_menu()
@@ -60,7 +78,7 @@ def main():
         elif opcion == "2":
             ver_correos_registrados()
         elif opcion == "3":
-            print("Funcionalidad de búsqueda aún no implementada.")
+            buscar_correo
         elif opcion == "4":
             print("Gracias por usar el gestor de correos. ¡Hasta pronto!")
             break
