@@ -3,7 +3,9 @@ Gestor de Correos Electrónicos - Biblioteca Universidad Tecnológica del Valle
 Autores: Jonathan Cardona Calderon - Sandra Liliana Zapata Gallón
 """
 
-# Colección para almacenar los correos registrados
+import re
+
+# Colección para almacenar correos como diccionarios
 correos_registrados = []
 
 def mostrar_menu():
@@ -13,13 +15,36 @@ def mostrar_menu():
     print("3. Buscar un correo específico")
     print("4. Salir de la aplicación")
 
+def validar_correo(correo: str) -> str | None:
+    """
+    Valida el correo usando regex y clasifica como estudiante o docente.
+    Retorna el tipo si es válido, None si es inválido.
+    """
+    patron = r'^[\w\.-]+@(?:estudiante\.utv\.edu\.co|utv\.edu\.co)$'
+    if re.match(patron, correo):
+        if correo.endswith("@estudiante.utv.edu.co"):
+            return "estudiante"
+        elif correo.endswith("@utv.edu.co"):
+            return "docente"
+    return None
+
+def registrar_correo():
+    correo = input("Ingrese el correo electrónico: ").strip().lower()
+    tipo = validar_correo(correo)
+
+    if tipo:
+        correos_registrados.append({"correo": correo, "tipo": tipo})
+        print(f"Correo registrado exitosamente como {tipo}.")
+    else:
+        print("Correo no válido. Verifique el formato y dominio.")
+
 def main():
     while True:
         mostrar_menu()
         opcion = input("Seleccione una opción (1-4): ")
 
         if opcion == "1":
-            print("Funcionalidad de registro aún no implementada.")
+            registrar_correo()
         elif opcion == "2":
             print("Funcionalidad de visualización aún no implementada.")
         elif opcion == "3":
