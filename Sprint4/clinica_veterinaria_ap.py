@@ -6,6 +6,7 @@ Autores: Jonathan Cardona Calderon - Sandra Liliana Zapata Gallón
 """
 
 from datetime import datetime
+from typing import List
 
 class Dueno:
     """
@@ -66,3 +67,109 @@ class Consulta:
         return (f"[{fecha_str}] Consulta de '{self.mascota.nombre}': Motivo: {self.motivo} | "
                 f"Diagnóstico: {self.diagnostico}")
 
+
+# --- Funciones de gestión ---
+def mostrar_menu() -> str:
+    print("\n=== Clínica Veterinaria Amigos Peludos ===")
+    print("1. Registrar mascota")
+    print("2. Registrar consulta")
+    print("3. Listar mascotas")
+    print("4. Ver historial de consultas")
+    print("5. Salir")
+    return input("Seleccione una opción: ").strip()
+
+
+def registrar_mascota(mascotas: List[Mascota]) -> None:
+    print("\n-- Registrar nueva mascota --")
+    nombre = input("Nombre de la mascota: ").strip()
+    especie = input("Especie: ").strip()
+    raza = input("Raza: ").strip()
+    edad = int(input("Edad (años): ").strip())
+
+    print("\nDatos del dueño:")
+    nombre_d = input("  Nombre: ").strip()
+    tel = input("  Teléfono: ").strip()
+    dir = input("  Dirección: ").strip()
+
+    dueno = Dueno(nombre_d, tel, dir)
+    mascota = Mascota(nombre, especie, raza, edad, dueno)
+    mascotas.append(mascota)
+    print(f"\n Mascota '{nombre}' registrada correctamente.")
+
+
+def listar_mascotas(mascotas: List[Mascota]) -> None:
+    print("\n-- Mascotas registradas --")
+    if not mascotas:
+        print("No hay mascotas registradas.")
+        return
+    for i, m in enumerate(mascotas, start=1):
+        print(f"{i}. {m}")
+
+
+def registrar_consulta(mascotas: List[Mascota], consultas: List[Consulta]) -> None:
+    print("\n-- Registrar consulta veterinaria --")
+    if not mascotas:
+        print("Antes debe registrar al menos una mascota.")
+        return
+
+    listar_mascotas(mascotas)
+    idx = int(input("Seleccione el número de la mascota: ").strip()) - 1
+    if idx not in range(len(mascotas)):
+        print("Selección inválida.")
+        return
+
+    motivo = input("Motivo de la consulta: ").strip()
+    diagnostico = input("Diagnóstico: ").strip()
+    fecha = datetime.now()
+
+    consulta = Consulta(fecha, motivo, diagnostico, mascotas[idx])
+    consultas.append(consulta)
+    print(f"\n Consulta registrada para '{mascotas[idx].nombre}'.")
+
+
+def ver_historial(mascotas: List[Mascota], consultas: List[Consulta]) -> None:
+    print("\n-- Historial de consultas --")
+    if not mascotas:
+        print("No hay mascotas registradas.")
+        return
+
+    listar_mascotas(mascotas)
+    idx = int(input("Seleccione el número de la mascota: ").strip()) - 1
+    if idx not in range(len(mascotas)):
+        print("Selección inválida.")
+        return
+
+    pet = mascotas[idx]
+    historial = [c for c in consultas if c.mascota is pet]
+    if not historial:
+        print(f"No hay consultas registradas para '{pet.nombre}'.")
+    else:
+        print(f"\nConsultas de '{pet.nombre}':")
+        for c in historial:
+            print(c)
+
+
+# --- Bucle principal ---
+def main() -> None:
+    mascotas: List[Mascota] = []
+    consultas: List[Consulta] = []
+
+    while True:
+        opcion = mostrar_menu()
+        if opcion == "1":
+            registrar_mascota(mascotas)
+        elif opcion == "2":
+            registrar_consulta(mascotas, consultas)
+        elif opcion == "3":
+            listar_mascotas(mascotas)
+        elif opcion == "4":
+            ver_historial(mascotas, consultas)
+        elif opcion == "5":
+            print("¡Hasta luego!")
+            break
+        else:
+            print("Opción no válida, intente de nuevo.")
+
+
+if __name__ == "__main__":
+    main()
