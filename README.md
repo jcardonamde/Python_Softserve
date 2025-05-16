@@ -16,5 +16,6 @@ Este proyecto hace parte del desarrollo de ejercicios prácticos para el **Pytho
 | 1      | ✅ Ejercicio: Validador y Gestor de Correos Electrónicos para Biblioteca Universitaria |
 | 2      | ✅ Ejercicio: Validador y Gestor de Correos Electrónicos para Biblioteca Universitaria |
 | 3      | ✅ Ejercicio: Funciones en Jupyter Notebook |
+| 4      | ✅ Ejercicio: Sistema Simple de Gestión para Veterinaria  |
 
 ---
