@@ -1,4 +1,4 @@
-# Clínica Veterinaria "Amigos Peludos"
+# :dog: Clínica Veterinaria Amigos Peludos
 
 **Sistema de Gestión Veterinaria en Python**
 
@@ -68,5 +68,3 @@ Este proyecto es una aplicación de consola desarrollada en Python que permite g
 Este proyecto ha sido desarrollado con fines académicos para el Bootcamp de Python Softserve. 
 Puedes usar, modificar y distribuir libremente este código para fines educativos o personales.
 No se permite su uso con fines comerciales sin autorización.
-
----

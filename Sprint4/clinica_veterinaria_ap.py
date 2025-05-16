@@ -7,6 +7,7 @@ Autores: Jonathan Cardona Calderon - Sandra Liliana Zapata Gallón
 
 from datetime import datetime
 from typing import List
+import sys
 
 class Dueno:
     """
@@ -69,6 +70,24 @@ class Consulta:
 
 
 # --- Funciones de gestión ---
+def input_int(prompt: str, min_val: int = None, max_val: int = None) -> int:
+    """
+    Solicita un entero al usuario, validando rango opcional.
+    """
+    while True:
+        try:
+            valor = int(input(prompt).strip())
+            if min_val is not None and valor < min_val:
+                print(f"Por favor ingrese un valor >= {min_val}.")
+                continue
+            if max_val is not None and valor > max_val:
+                print(f"Por favor ingrese un valor <= {max_val}.")
+                continue
+            return valor
+        except ValueError:
+            print("Entrada inválida. Ingrese un número entero.")
+
+
 def mostrar_menu() -> str:
     print("\n=== Clínica Veterinaria Amigos Peludos ===")
     print("1. Registrar mascota")
@@ -80,6 +99,9 @@ def mostrar_menu() -> str:
 
 
 def registrar_mascota(mascotas: List[Mascota]) -> None:
+    """
+    Solicita datos para crear una nueva mascota y su dueño.
+    """
     print("\n-- Registrar nueva mascota --")
     nombre = input("Nombre de la mascota: ").strip()
     especie = input("Especie: ").strip()
@@ -98,6 +120,9 @@ def registrar_mascota(mascotas: List[Mascota]) -> None:
 
 
 def listar_mascotas(mascotas: List[Mascota]) -> None:
+    """
+    Muestra todas las mascotas registradas.
+    """
     print("\n-- Mascotas registradas --")
     if not mascotas:
         print("No hay mascotas registradas.")
@@ -107,6 +132,9 @@ def listar_mascotas(mascotas: List[Mascota]) -> None:
 
 
 def registrar_consulta(mascotas: List[Mascota], consultas: List[Consulta]) -> None:
+    """
+    Registra una consulta para una mascota existente.
+    """
     print("\n-- Registrar consulta veterinaria --")
     if not mascotas:
         print("Antes debe registrar al menos una mascota.")
@@ -128,6 +156,9 @@ def registrar_consulta(mascotas: List[Mascota], consultas: List[Consulta]) -> No
 
 
 def ver_historial(mascotas: List[Mascota], consultas: List[Consulta]) -> None:
+    """
+    Muestra el historial de consultas de una mascota específica.
+    """
     print("\n-- Historial de consultas --")
     if not mascotas:
         print("No hay mascotas registradas.")
@@ -149,27 +180,32 @@ def ver_historial(mascotas: List[Mascota], consultas: List[Consulta]) -> None:
             print(c)
 
 
-# --- Bucle principal ---
+# --- Bucle principal con manejo de interrupción ---
 def main() -> None:
     mascotas: List[Mascota] = []
     consultas: List[Consulta] = []
 
-    while True:
-        opcion = mostrar_menu()
-        if opcion == "1":
-            registrar_mascota(mascotas)
-        elif opcion == "2":
-            registrar_consulta(mascotas, consultas)
-        elif opcion == "3":
-            listar_mascotas(mascotas)
-        elif opcion == "4":
-            ver_historial(mascotas, consultas)
-        elif opcion == "5":
-            print("¡Hasta luego!")
-            break
-        else:
-            print("Opción no válida, intente de nuevo.")
+    try:
+        while True:
+            opcion = mostrar_menu()
+            if opcion == "1":
+                registrar_mascota(mascotas)
+            elif opcion == "2":
+                registrar_consulta(mascotas, consultas)
+            elif opcion == "3":
+                listar_mascotas(mascotas)
+            elif opcion == "4":
+                ver_historial(mascotas, consultas)
+            elif opcion == "5":
+                print("¡Hasta luego!")
+                break
+            else:
+                print("Opción no válida, intente de nuevo.")
+    except KeyboardInterrupt:
+        print("\nInterrupción recibida. Saliendo...")
+        sys.exit(0)
 
 
+# --- Ejecución del programa ---
 if __name__ == "__main__":
     main()
