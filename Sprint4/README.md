@@ -24,12 +24,31 @@ Este proyecto es una aplicación de consola desarrollada en Python que permite g
 
 ---
 
-## 🚀 Requisitos
+## 🚀 Requisitos Técnicos
 
 * Python 3.7 o superior.
 * No requiere dependencias externas más allá de la biblioteca estándar.
 
-*Desarrollado con buenas prácticas de POO en Python.*
+---
+
+## 🎯 Requisitos Funcionales
+
+- Registrar nuevas mascotas y asignarlas a un dueño con datos completos (nombre, especie, raza, edad, teléfono y dirección del dueño).
+- Registrar consultas veterinarias para una mascota específica con fecha y hora automáticas, motivo y diagnóstico.
+- Listar todas las mascotas registradas, mostrando sus datos y los del dueño.
+- Ver el historial de consultas de una mascota en particular, detallando fecha, motivo y diagnóstico.
+- Salir de la aplicación de forma segura mediante la opción de menú o con Ctrl+C.
+
+---
+
+## 🧰 Tecnologías y Conceptos Usados
+
+- **Python 3.7+** como lenguaje de programación.
+- **Programación Orientada a Objetos (POO)** para modelar entidades.
+- **Modularidad** y funciones independientes para cada funcionalidad.
+- **Validación de entradas** con función auxiliar `input_int`.
+- **Manejo de excepciones** y captura de `KeyboardInterrupt` para una salida controlada.
+- **Biblioteca estándar**: `datetime`, `typing`, `sys`.
 
 ---
 
