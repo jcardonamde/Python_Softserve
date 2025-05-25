@@ -17,3 +17,11 @@
 2025-05-25 13:24:05 INFO: Se exportaron 2 mascotas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint6\mascotas_dueños.csv
 2025-05-25 13:24:05 INFO: Se exportaron 1 consultas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint6\consultas.json
 2025-05-25 13:24:05 INFO: Saliendo del programa y guardando datos...
+2025-05-25 13:59:01 INFO: Inicio de la aplicación
+2025-05-25 13:59:01 INFO: Se cargaron 2 mascotas desde c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint6\mascotas_dueños.csv
+2025-05-25 13:59:01 INFO: Se cargaron 1 consultas desde c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint6\consultas.json
+2025-05-25 13:59:32 WARNING: Entrada fuera de rango: Valor 3 mayor que máximo 2.
+2025-05-25 13:59:40 INFO: Historial de consultas mostrado para 'Cosmo'.
+2025-05-25 13:59:51 INFO: Se exportaron 2 mascotas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint6\mascotas_dueños.csv
+2025-05-25 13:59:51 INFO: Se exportaron 1 consultas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint6\consultas.json
+2025-05-25 13:59:51 INFO: Saliendo del programa y guardando datos...

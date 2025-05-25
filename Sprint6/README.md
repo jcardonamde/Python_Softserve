@@ -1,6 +1,6 @@
 # :dog: Clínica Veterinaria Amigos Peludos
 
-**Sistema de Gestión Avanzado Veterinaria en Python**
+**Sistema Completo de Gestión para Veterinaria en Python**
 
 Esta versión amplía la aplicación de consola incorporando serialización y deserialización de datos en CSV (mascotas y dueños) y JSON (consultas), además de ubicar automáticamente todos los archivos generados junto al script.
 
@@ -63,7 +63,7 @@ Esta versión amplía la aplicación de consola incorporando serialización y de
 3. Ejecuta la aplicación:
 
    ```bash
-   python clinica_veterinaria_file.py
+   python clinica_veterinaria_files.py
    ```
 
 4. Sigue el menú en consola para:
