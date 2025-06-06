@@ -1,0 +1,59 @@
+2025-06-06 06:30:52 INFO: Inicio de la aplicación
+2025-06-06 06:30:52 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv no encontrado, cargando lista vacía.
+2025-06-06 06:30:52 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\consultas.json no encontrado, cargando lista vacía.
+2025-06-06 06:31:52 INFO: 
+ Mascota 'Cosmo Cardona' registrada correctamente.
+2025-06-06 06:32:02 WARNING: Opción inválida en menú: 8
+2025-06-06 06:32:09 WARNING: Entrada fuera de rango: Valor 2 mayor que máximo 1.
+2025-06-06 06:32:30 INFO: 
+ Consulta registrada para 'Cosmo Cardona'.
+2025-06-06 06:32:37 WARNING: Opción inválida en menú: 
+2025-06-06 06:32:50 WARNING: Entrada fuera de rango: Valor 3 mayor que máximo 1.
+2025-06-06 06:32:51 INFO: Historial de consultas mostrado para 'Cosmo Cardona'.
+2025-06-06 06:33:08 INFO: Se exportaron 1 mascotas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv
+2025-06-06 06:33:08 INFO: Se exportaron 1 consultas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\consultas.json
+2025-06-06 06:33:33 INFO: Se exportaron 1 mascotas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv
+2025-06-06 06:33:33 INFO: Se exportaron 1 consultas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\consultas.json
+2025-06-06 06:33:33 INFO: Saliendo del programa y guardando datos...
+2025-06-06 06:51:34 INFO: Inicio de la aplicación
+2025-06-06 06:51:34 WARNING: Entrada fuera de rango: Valor -1 menor que mínimo 0.
+2025-06-06 06:51:34 WARNING: Entrada inválida: No ingresó un número entero válido.
+2025-06-06 06:51:34 WARNING: Entrada fuera de rango: Valor 11 mayor que máximo 10.
+2025-06-06 06:51:34 WARNING: Archivo C:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv no encontrado, cargando lista vacía.
+2025-06-06 06:51:34 WARNING: Archivo C:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\consultas.json no encontrado, cargando lista vacía.
+2025-06-06 06:51:34 INFO: Se exportaron 1 mascotas a C:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv
+2025-06-06 06:51:34 INFO: Se exportaron 1 consultas a C:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\consultas.json
+2025-06-06 06:51:34 INFO: Se cargaron 1 mascotas desde C:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv
+2025-06-06 06:51:34 INFO: Se cargaron 1 consultas desde C:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\consultas.json
+2025-06-06 06:51:34 INFO: Se exportaron 1 mascotas a C:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv
+2025-06-06 06:51:34 INFO: Se cargaron 1 mascotas desde C:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv
+2025-06-06 07:13:36 INFO: Inicio de la aplicación (storage)
+2025-06-06 07:13:36 INFO: Arrancando la aplicación (app.py)
+2025-06-06 07:13:36 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv no encontrado, cargando lista vacía.
+2025-06-06 07:13:36 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\consultas.json no encontrado, cargando lista vacía.
+2025-06-06 07:13:41 WARNING: Intento de consulta inválido: No hay mascotas registradas.
+2025-06-06 07:13:45 WARNING: Opción inválida en menú: 8
+2025-06-06 07:14:21 INFO: 
+ Mascota 'Efelante' registrada correctamente.
+2025-06-06 07:14:28 WARNING: Entrada fuera de rango: Valor 3 mayor que máximo 1.
+2025-06-06 07:14:46 INFO: 
+ Consulta registrada para 'Efelante'.
+2025-06-06 07:15:00 WARNING: Entrada fuera de rango: Valor 5 mayor que máximo 1.
+2025-06-06 07:15:21 INFO: Historial de consultas mostrado para 'Efelante'.
+2025-06-06 07:15:27 INFO: Se exportaron 1 mascotas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv
+2025-06-06 07:15:27 INFO: Se exportaron 1 consultas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\consultas.json
+2025-06-06 07:15:42 INFO: Se exportaron 1 mascotas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv
+2025-06-06 07:15:42 INFO: Se exportaron 1 consultas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\consultas.json
+2025-06-06 07:15:42 INFO: Saliendo del programa y guardando datos...
+2025-06-06 07:15:53 INFO: Inicio de la aplicación (storage)
+2025-06-06 07:15:53 WARNING: Entrada fuera de rango: Valor -1 menor que mínimo 0.
+2025-06-06 07:15:53 WARNING: Entrada inválida: No ingresó un número entero válido.
+2025-06-06 07:15:53 WARNING: Entrada fuera de rango: Valor 11 mayor que máximo 10.
+2025-06-06 07:15:53 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv no encontrado, cargando lista vacía.
+2025-06-06 07:15:53 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\consultas.json no encontrado, cargando lista vacía.
+2025-06-06 07:15:53 INFO: Se exportaron 1 mascotas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv
+2025-06-06 07:15:53 INFO: Se exportaron 1 consultas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\consultas.json
+2025-06-06 07:15:53 INFO: Se cargaron 1 mascotas desde c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv
+2025-06-06 07:15:53 INFO: Se cargaron 1 consultas desde c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\consultas.json
+2025-06-06 07:15:53 INFO: Se exportaron 1 mascotas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv
+2025-06-06 07:15:53 INFO: Se cargaron 1 mascotas desde c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint7\mascotas_dueños.csv
