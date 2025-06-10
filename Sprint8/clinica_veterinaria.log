@@ -1,0 +1,106 @@
+2025-06-09 17:49:32 INFO: Inicio de la aplicación (storage)
+2025-06-09 17:49:32 INFO: Tablas SQLite iniciadas o ya existentes.
+2025-06-09 17:49:32 INFO: Arrancando la aplicación (app.py)
+2025-06-09 17:49:32 WARNING: Archivo C:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\mascotas_dueños.csv no encontrado, cargando lista vacía.
+2025-06-09 17:49:32 WARNING: Archivo C:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\consultas.json no encontrado, cargando lista vacía.
+2025-06-09 18:12:52 INFO: Inicio de la aplicación (storage)
+2025-06-09 18:12:52 INFO: Tablas SQLite iniciadas o ya existentes.
+2025-06-09 18:12:52 INFO: Arrancando la aplicación (app.py)
+2025-06-09 18:12:52 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\mascotas_dueños.csv no encontrado, cargando lista vacía.
+2025-06-09 18:12:52 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\consultas.json no encontrado, cargando lista vacía.
+2025-06-09 18:14:05 WARNING: Opción inválida en menú: & C:/Users/Jonathan/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Jonathan/Documents/Dev/Bootcamp Python SoftServe/Python_Softserve/Sprint8/app.py"
+2025-06-09 18:14:17 WARNING: Opción inválida en menú: & C:/Users/Jonathan/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Jonathan/Documents/Dev/Bootcamp Python SoftServe/Python_Softserve/Sprint8/app.py"
+2025-06-09 18:14:18 WARNING: Opción inválida en menú: & C:/Users/Jonathan/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Jonathan/Documents/Dev/Bootcamp Python SoftServe/Python_Softserve/Sprint8/app.py"
+2025-06-09 18:14:22 WARNING: Opción inválida en menú: & C:/Users/Jonathan/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Jonathan/Documents/Dev/Bootcamp Python SoftServe/Python_Softserve/Sprint8/app.py"
+2025-06-09 18:14:41 INFO: Inicio de la aplicación (storage)
+2025-06-09 18:14:41 INFO: Tablas SQLite iniciadas o ya existentes.
+2025-06-09 18:14:41 INFO: Arrancando la aplicación (app.py)
+2025-06-09 18:14:41 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\mascotas_dueños.csv no encontrado, cargando lista vacía.
+2025-06-09 18:14:41 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\consultas.json no encontrado, cargando lista vacía.
+2025-06-09 18:15:07 INFO: Dueño insertado con id 1
+2025-06-09 18:15:07 INFO: Dueño registrado en DB con id 1
+2025-06-09 18:15:18 INFO: Se cargaron 1 dueños desde DB
+2025-06-09 18:20:33 INFO: Se cargaron 1 dueños desde DB
+2025-06-09 18:20:38 WARNING: Entrada fuera de rango: Valor 2 mayor que máximo 1.
+2025-06-09 18:21:02 INFO: Dueño insertado con id 2
+2025-06-09 18:21:02 INFO: Mascota insertada con id 1
+2025-06-09 18:21:02 INFO: Mascota registrada en DB con id 1
+2025-06-09 18:21:13 INFO: Se cargaron 2 dueños desde DB
+2025-06-09 18:21:16 INFO: Se cargaron 1 mascotas desde DB
+2025-06-09 18:25:27 INFO: Se cargaron 1 mascotas desde DB
+2025-06-09 18:25:47 INFO: Consulta insertada con id 1
+2025-06-09 18:25:47 INFO: Consulta registrada en DB con id 1
+2025-06-09 18:25:51 INFO: Se cargaron 1 consultas desde DB
+2025-06-09 18:26:24 WARNING: Intento de historial inválido: No hay mascotas registradas.
+2025-06-09 19:11:24 INFO: Se cargaron 2 dueños desde DB
+2025-06-09 19:11:52 INFO: Dueño insertado con id 3
+2025-06-09 19:11:52 INFO: Mascota insertada con id 2
+2025-06-09 19:11:52 INFO: Mascota registrada en DB con id 2
+2025-06-09 19:11:57 INFO: Se cargaron 2 mascotas desde DB
+2025-06-09 19:12:19 INFO: Dueño insertado con id 4
+2025-06-09 19:12:19 INFO: Dueño registrado en DB con id 4
+2025-06-09 19:12:25 INFO: Se cargaron 4 dueños desde DB
+2025-06-09 19:27:29 INFO: Inicio de la aplicación (storage)
+2025-06-09 19:27:29 INFO: Tablas SQLite iniciadas o ya existentes.
+2025-06-09 19:27:29 INFO: Arrancando la aplicación (app.py)
+2025-06-09 19:27:29 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\mascotas_dueños.csv no encontrado, cargando lista vacía.
+2025-06-09 19:27:29 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\consultas.json no encontrado, cargando lista vacía.
+2025-06-09 19:44:25 INFO: 
+ Mascota 'Caturrito' registrada correctamente.
+2025-06-09 20:22:44 INFO: Se cargaron 4 dueños desde DB
+2025-06-09 20:23:02 INFO: Mascota insertada con id 3
+2025-06-09 20:23:02 INFO: Mascota registrada en DB con id 3
+2025-06-09 20:23:08 INFO: Se cargaron 3 mascotas desde DB
+2025-06-09 20:23:13 INFO: Se cargaron 4 dueños desde DB
+2025-06-09 20:29:18 INFO: Inicio de la aplicación (storage)
+2025-06-09 20:29:18 INFO: Tablas SQLite iniciadas o ya existentes.
+2025-06-09 20:29:18 INFO: Arrancando la aplicación (app.py)
+2025-06-09 20:29:18 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\mascotas_dueños.csv no encontrado, cargando lista vacía.
+2025-06-09 20:29:18 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\consultas.json no encontrado, cargando lista vacía.
+2025-06-09 20:29:30 INFO: Se cargaron 4 dueños desde DB
+2025-06-09 20:29:39 INFO: Se cargaron 3 mascotas desde DB
+2025-06-09 20:29:45 INFO: Se cargaron 1 consultas desde DB
+2025-06-09 20:29:52 INFO: Se cargaron 3 mascotas desde DB
+2025-06-09 20:31:03 INFO: Consulta insertada con id 2
+2025-06-09 20:31:03 INFO: Consulta registrada en DB con id 2
+2025-06-09 20:31:05 INFO: Se cargaron 2 consultas desde DB
+2025-06-09 21:08:10 INFO: Inicio de la aplicación (storage)
+2025-06-09 21:08:10 INFO: Tablas SQLite iniciadas o ya existentes.
+2025-06-09 21:08:10 INFO: Arrancando la aplicación (app.py)
+2025-06-09 21:08:10 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\mascotas_dueños.csv no encontrado, cargando lista vacía.
+2025-06-09 21:08:10 WARNING: Archivo c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\consultas.json no encontrado, cargando lista vacía.
+2025-06-09 21:08:18 INFO: Se cargaron 4 dueños desde DB
+2025-06-09 21:08:26 INFO: Se cargaron 4 dueños desde DB
+2025-06-09 21:08:48 INFO: Dueño 2 actualizado
+2025-06-09 21:08:53 INFO: Se cargaron 4 dueños desde DB
+2025-06-09 21:09:01 INFO: Se cargaron 4 dueños desde DB
+2025-06-09 21:09:18 INFO: Se cargaron 4 dueños desde DB
+2025-06-09 21:09:21 INFO: Se cargaron 4 dueños desde DB
+2025-06-09 21:09:25 INFO: Dueño 3 eliminado
+2025-06-09 21:11:00 INFO: Se cargaron 2 mascotas desde DB
+2025-06-09 21:11:20 INFO: Se cargaron 3 dueños desde DB
+2025-06-09 21:13:44 INFO: Mascota insertada con id 4
+2025-06-09 21:13:44 INFO: Mascota registrada en DB con id 4
+2025-06-09 21:13:48 INFO: Se cargaron 3 mascotas desde DB
+2025-06-09 21:13:48 ERROR: Excepción no controlada en el bucle principal: cannot unpack non-iterable Mascota object
+2025-06-09 21:13:48 INFO: Se exportaron 0 mascotas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\mascotas_dueños.csv
+2025-06-09 21:13:48 INFO: Se exportaron 0 consultas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\consultas.json
+2025-06-09 21:13:55 INFO: Inicio de la aplicación (storage)
+2025-06-09 21:13:55 INFO: Tablas SQLite iniciadas o ya existentes.
+2025-06-09 21:13:55 INFO: Arrancando la aplicación (app.py)
+2025-06-09 21:13:55 INFO: Se cargaron 0 mascotas desde c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\mascotas_dueños.csv
+2025-06-09 21:13:55 INFO: Se cargaron 0 consultas desde c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\consultas.json
+2025-06-09 21:14:15 INFO: Se cargaron 3 mascotas desde DB
+2025-06-09 21:14:15 ERROR: Excepción no controlada en el bucle principal: cannot unpack non-iterable Mascota object
+2025-06-09 21:14:15 INFO: Se exportaron 0 mascotas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\mascotas_dueños.csv
+2025-06-09 21:14:15 INFO: Se exportaron 0 consultas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\consultas.json
+2025-06-09 21:14:22 INFO: Inicio de la aplicación (storage)
+2025-06-09 21:14:22 INFO: Tablas SQLite iniciadas o ya existentes.
+2025-06-09 21:14:22 INFO: Arrancando la aplicación (app.py)
+2025-06-09 21:14:22 INFO: Se cargaron 0 mascotas desde c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\mascotas_dueños.csv
+2025-06-09 21:14:22 INFO: Se cargaron 0 consultas desde c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\consultas.json
+2025-06-09 21:14:26 INFO: Se cargaron 2 consultas desde DB
+2025-06-09 21:14:31 INFO: Se cargaron 2 consultas desde DB
+2025-06-09 21:14:31 ERROR: Excepción no controlada en el bucle principal: cannot unpack non-iterable Consulta object
+2025-06-09 21:14:31 INFO: Se exportaron 0 mascotas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\mascotas_dueños.csv
+2025-06-09 21:14:31 INFO: Se exportaron 0 consultas a c:\Users\Jonathan\Documents\Dev\Bootcamp Python SoftServe\Python_Softserve\Sprint8\consultas.json
