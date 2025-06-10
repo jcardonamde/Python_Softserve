@@ -7,13 +7,14 @@ Esta aplicación de consola en Python gestiona la información de una clínica v
 ---
 
 ## 📌 Estructura del Proyecto
-:clipboard: models.py # Clases Dueno, Mascota, Consulta
-:clipboard: storage.py # Funciones de serialización/deserialización (CSV y JSON)
-:clipboard: utils.py # Funciones auxiliares (input_int, etc.)
-:clipboard: app.py # Lógica principal: menú, bucle y llamadas a models/storage/utils
-:clipboard: test_veterinaria.py # Pruebas unitarias con unittest
-:open_file_folder: pycache/ # Cache automático de Python
+- :clipboard: models.py # Clases Dueno, Mascota, Consulta
+- :clipboard: storage.py # Funciones de serialización/deserialización (CSV y JSON)
+- :clipboard: utils.py # Funciones auxiliares (input_int, etc.)
+- :clipboard: app.py # Lógica principal: menú, bucle y llamadas a models/storage/utils
+- :clipboard: test_veterinaria.py # Pruebas unitarias con unittest
+- :open_file_folder: pycache/ # Cache automático de Python
 
+<br>
 
 ## 📌 Características
 
