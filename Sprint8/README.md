@@ -2,17 +2,18 @@
 
 **Sistema Completo de Gestión para Veterinaria en Python**
 
-Esta aplicación de consola en Python gestiona la información de una clínica veterinaria (dueños, mascotas y consultas), maneja logs, con persistencia en CSV/JSON y ahora con pruebas unitarias organizadas con `unittest`.
+Esta aplicación de consola en Python gestiona la información de una clínica veterinaria (dueños, mascotas y consultas), maneja logs, con persistencia en CSV/JSON, con pruebas unitarias organizadas con `unittest`, y ahora con persistencia de datos con SQLite para operaciones CRUD.
 
 ---
 
 ## 📌 Estructura del Proyecto
-:clipboard: models.py # Clases Dueno, Mascota, Consulta
-:clipboard: storage.py # Funciones de serialización/deserialización (CSV y JSON)
-:clipboard: utils.py # Funciones auxiliares (input_int, etc.)
-:clipboard: app.py # Lógica principal: menú, bucle y llamadas a models/storage/utils
-:clipboard: test_veterinaria.py # Pruebas unitarias con unittest
-:open_file_folder: pycache/ # Cache automático de Python
+* :clipboard: models.py # Clases Dueno, Mascota, Consulta
+* :clipboard: storage.py # Funciones de serialización/deserialización (CSV y JSON)
+* :clipboard: utils.py # Funciones auxiliares (input_int, etc.)
+* :clipboard: app.py # Lógica principal: menú, bucle y llamadas a models/storage/utils/database
+* :clipboard: test_veterinaria.py # Pruebas unitarias con unittest
+* :clipboard: database.py # Funciones para crear tablas y realizar operaciones CRUD con SQLite.
+* :open_file_folder: pycache/ # Cache automático de Python
 
 
 ## 📌 Características
@@ -57,10 +58,10 @@ Esta aplicación de consola en Python gestiona la información de una clínica v
   * **SQLite**: base de datos (`database.py`) con tablas para `duenos`, `mascotas` y `consultas`.
 
 * **CRUD Completo en SQLite**
-  - **Crear**: `agregar_*` para dueños, mascotas y consultas.
-  - **Leer**: `listar_*` que devuelven tuplas `(id, objeto, [id_relacion])`.
-  - **Actualizar**: `actualizar_*` por `id`.
-  - **Eliminar**: `eliminar_*` por `id`.
+  - **Crear**: `agregar` para dueños, mascotas y consultas.
+  - **Leer**: `listar` que devuelven tuplas `(id, objeto, [id_relacion])`.
+  - **Actualizar**: `actualizar` por `id`.
+  - **Eliminar**: `eliminar` por `id`.
 
 
 ---
@@ -68,7 +69,7 @@ Esta aplicación de consola en Python gestiona la información de una clínica v
 ## 🚀 Requisitos
 
 * Python 3.7 o superior.
-* No requiere dependencias externas más allá de la biblioteca estándar (usa módulos csv, json, logging, os, datetime, unittest).
+* No requiere dependencias externas más allá de la biblioteca estándar (usa módulos csv, json, logging, os, datetime, unittest, sqlite3).
 
 *Desarrollado con buenas prácticas de POO en Python.*
 
@@ -127,7 +128,7 @@ O bien, para que descubra todos los tests automáticamente:
   .exit
   ```
 
-  o abrirlo en un gestor de bases de datos como DBeaver.
+  o puede explorarlo en un gestor de bases de datos como DBeaver.
 ---
 
 ## 📄 Archivos Generados
