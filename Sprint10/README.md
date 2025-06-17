@@ -2,28 +2,8 @@
 
 Este proyecto es un primer prototipo de interfaz web para la Clínica Veterinaria "Amigos Peludos" desarrollado con Django siguiendo el patrón MVT (Modelo‑Vista‑Plantilla). Está pensado como una demo estática sin acceso a base de datos ni funcionalidades avanzadas.
 
-
-
 ---
 
-## 📌 Estructura del Proyecto
-:clipboard: models.py # Clases Dueno, Mascota, Consulta
-:clipboard: storage.py # Funciones de serialización/deserialización (CSV y JSON)
-:clipboard: utils.py # Funciones auxiliares (input_int, etc.)
-:clipboard: app.py # Lógica principal: menú, bucle y llamadas a models/storage/utils
-:clipboard: test_veterinaria.py # Pruebas unitarias con unittest
-:open_file_folder: pycache/ # Cache automático de Python
-
-
-## 📌 Características
-
-* **Programación Orientada a Objetos**: Clases `Dueno`, `Mascota` y `Consulta`.
-
-* **Registro de datos**:
-  * Dueños y mascotas con datos básicos.
-  * Registro de consultas veterinarias.
-
----
 
 ## 🚀 Requisitos
 
@@ -75,31 +55,66 @@ Este proyecto es un primer prototipo de interfaz web para la Clínica Veterinari
 
 ---
 
-## 🗄️ Base de Datos SQLite
+📂 Estructura de Carpetas
 
-* Archivo generado: `clinica_veterinaria.db` en la carpeta del proyecto.
-* Para inspeccionarlo, puedes usar el cliente `sqlite3`:
-  ```bash
-  sqlite3 clinica_veterinaria.db
-  .tables
-  .schema duenos
-  .schema mascotas
-  .schema consultas
-  .exit
-  ```
+    ```bash
+    Sprint10/
+    ├── clinic/             # App Django: views, urls y tests básicos
+    │   ├── templates/      # Plantillas HTML para cada vista
+    │   │   └── clinic/
+    │   │       ├── home.html
+    │   │       ├── services.html
+    │   │       └── placeholder.html
+    │   ├── urls.py         # Rutas de la app
+    │   └── views.py        # Lógica de renderizado
+    │
+    ├── veterinary/         # Proyecto Django
+    │   ├── settings.py     # Configuración (INSTALLED_APPS, templates, static)
+    │   ├── urls.py         # Inclusión de `clinic.urls`
+    │   └── wsgi.py
+    │
+    ├── static/             # Archivos estáticos (CSS, imágenes opcionales)
+    │   └── css/
+    │       └── style.css
+    │
+    ├── manage.py           # CLI de Django
+    ├── requirements.txt    # Dependencias (Django)
+    ├── venv/               # Entorno virtual (ignorado por Git)
+    └── .gitignore          # Ignora venv/, __pycache__/, db.sqlite3, etc.
+    ```
 
-  o abrirlo en un gestor de bases de datos como DBeaver.
 ---
 
-## 📄 Archivos Generados
+## 📄 .gitignore
 
-* `clinica_veterinaria.db` — Base de datos SQLite.
-* `mascotas_dueños.csv` & `consultas.json` — Exportaciones en CSV/JSON.
-* `clinica_veterinaria.log` — Registro de eventos.
+* Asegúrate de ignorar:
+
+   ```bash
+    venv/
+    __pycache__/
+    db.sqlite3
+    *.pyc
+    /staticfiles/
+   ```
+
+---
+
+## 📝 Descripción de Rutas
+
+| URL          | Vista       | Template                |
+|--------------|-------------|-------------------------|
+| /            | home        | clinic/home.html        |
+| /services/   | services    | clinic/services.html    |
+| /placeholder/| placeholder | clinic/placeholder.html |
+
+---
+
+## 🎨 Diseño y Estilos
+
+* CSS básico en static/css/style.css.
+* Para agregar más estilos, modifica ese archivo o crea nuevas carpetas bajo static/.
 
 ---
 
 ## 📄 Licencia
-Este proyecto ha sido desarrollado con fines académicos para el Bootcamp de Python Softserve. 
-Puedes usar, modificar y distribuir libremente este código para fines educativos o personales.
-No se permite su uso con fines comerciales sin autorización.
+Proyecto académico para la digitalización de la Clínica Veterinaria “Amigos Peludos”. Uso y modificación permitidos con fines educativos o de demostración. No comercial sin autorización.
