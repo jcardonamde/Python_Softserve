@@ -21,5 +21,6 @@ Este proyecto hace parte del desarrollo de ejercicios prácticos para el **Pytho
 | 6      | ✅ Ejercicio: Sistema Completo de Gestión para Veterinaria con Serialización CSV y JSON  |
 | 7      | ✅ Ejercicio: Sistema Completo de Gestión para Veterinaria con Pruebas Unitarias  |
 | 8      | ✅ Ejercicio: Sistema Integral de Gestión para Veterinaria con Persistencia en SQLite  |
+| 10     | ✅ Ejercicio de Programación: Interfaz Web con Django (MVT)  |
 
 ---
