@@ -1,0 +1,5 @@
+# Ejecutar en la raiz de la carpeta para correr el proyecto
+python manage.py runserver
+
+# Usuario configurado para consola admin
+artemis

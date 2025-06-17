@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  {% load static %}
+<head>
+  <title>Próximamente | Amigos Peludos</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <h1>Contenido Dinámico (Placeholder)</h1>
+  <p>Estamos trabajando para mostrar:</p>
+  <ul>
+    {% for item in items %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'home' %}">Inicio</a>
+</body>
+</html>

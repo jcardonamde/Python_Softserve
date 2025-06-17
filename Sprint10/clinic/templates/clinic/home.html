@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  {% load static %}
+<head>
+  <title>Bienvenido | Amigos Peludos</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <h1>¡Bienvenido a Clínica Veterinaria Amigos Peludos!</h1>
+  <p>Tu mejor amigo, nuestra prioridad.</p>
+  <nav>
+    <a href="{% url 'services' %}">Servicios</a> |
+    <a href="{% url 'placeholder' %}">Próximamente</a>
+  </nav>
+</body>
+</html>
