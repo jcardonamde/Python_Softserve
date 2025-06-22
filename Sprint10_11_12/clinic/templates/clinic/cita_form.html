@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-2 mb-5">
+  <h2>Registrar Cita</h2>
+  <form method="post" novalidate>
+    {% csrf_token %}
+    <div class="mb-3">
+      {{ form.mascota.label_tag }}
+      {{ form.mascota }}  
+      {% if form.mascota.errors %}
+        <div class="text-danger">{{ form.mascota.errors }}</div>
+      {% endif %}
+    </div>
+    <div class="mb-3">
+      {{ form.fecha.label_tag }}
+      {{ form.fecha }}
+      {% if form.fecha.errors %}
+        <div class="text-danger">{{ form.fecha.errors }}</div>
+      {% endif %}
+    </div>
+    <div class="mb-3">
+      {{ form.motivo.label_tag }}
+      {{ form.motivo }}
+      {% if form.motivo.errors %}
+        <div class="text-danger">{{ form.motivo.errors }}</div>
+      {% endif %}
+    </div>
+    <div class="mb-3">
+      {{ form.diagnostico.label_tag }}
+      {{ form.diagnostico }}
+      {% if form.diagnostico.errors %}
+        <div class="text-danger">{{ form.diagnostico.errors }}</div>
+      {% endif %}
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar Cita</button>
+    <a href="{% url 'cita_list' %}" class="btn btn-secondary ms-2">Cancelar</a>
+  </form>
+</div>
+{% endblock %}

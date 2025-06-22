@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header.hero {
+  background-image: url("/static/imgs/bg_perro_gato.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  overflow: auto; 
+}
+
+footer {
+  width: 100%;
+  padding: 1rem 0;
+}

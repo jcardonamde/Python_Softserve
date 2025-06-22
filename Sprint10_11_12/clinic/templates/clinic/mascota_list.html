@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Mascotas</h2>
+    <a href="{% url 'mascota_create' %}" class="btn btn-success">
+      <i class="bi bi-plus-circle me-1"></i> Nueva Mascota
+    </a>
+  </div>
+
+  {% if mascotas %}
+    <div class="table-responsive">
+      <table class="table table-striped table-hover align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Especie</th>
+            <th>Edad</th>
+            <th>Propietario</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for pet in mascotas %}
+          <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ pet.nombre }}</td>
+            <td>{{ pet.especie|capfirst }}</td>
+            <td>{{ pet.edad }} años</td>
+            <td>{{ pet.propietario }}</td>
+            <td>
+              <a href="#" class="btn btn-sm btn-outline-primary me-1">
+                <i class="bi bi-eye"></i>
+              </a>
+              <a href="#" class="btn btn-sm btn-outline-warning me-1">
+                <i class="bi bi-pencil"></i>
+              </a>
+              <a href="#" class="btn btn-sm btn-outline-danger">
+                <i class="bi bi-trash"></i>
+              </a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <div class="alert alert-info text-center">
+      No hay mascotas registradas.
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

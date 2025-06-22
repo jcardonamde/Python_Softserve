@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-2 mb-2">
+  <h2 class="text-center mb-4">Nuestros Servicios</h2>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm text-center">
+        <div class="card-body">
+          <i class="bi bi-stethoscope fs-1 text-primary mb-3"></i>
+          <h5 class="card-title">Consulta General</h5>
+          <p class="card-text">Evaluaciones de salud rutinarias para tu mascota.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm text-center">
+        <div class="card-body">
+          <i class="bi bi-shield-lock fs-1 text-success mb-3"></i>
+          <h5 class="card-title">Vacunación</h5>
+          <p class="card-text">Protege a tu compañero con nuestro plan de vacunación.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm text-center">
+        <div class="card-body">
+          <i class="bi bi-scissors fs-1 text-warning mb-3"></i>
+          <h5 class="card-title">Cirugías Menores</h5>
+          <p class="card-text">Procedimientos seguros y atención especializada.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm text-center">
+        <div class="card-body">
+          <i class="bi bi-brush fs-1 text-info mb-3"></i>
+          <h5 class="card-title">Estética y Grooming</h5>
+          <p class="card-text">Cuida el pelaje y la imagen de tu mascota con cariño.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-5 mb-3">
+    <a href="{% url 'home' %}" class="btn btn-outline-primary">Volver al Inicio</a>
+  </div>
+</div>
+{% endblock %}

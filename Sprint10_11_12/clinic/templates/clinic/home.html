@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="text-center py-5">
+  <h1 class="display-4">¡Bienvenido a Clínica Veterinaria Amigos Peludos!</h1>
+  <p class="class="lead">Tu mejor amigo, nuestra prioridad</p>
+  <div class="mt-4">
+    <a href="{% url 'services' %}" class="btn btn-primary btn-lg mx-2">Servicios</a>
+    <a href="{% url 'placeholder' %}" class="btn btn-secondary btn-lg mx-2">Próximamente</a>
+  </div>
+</div>
+{% endblock %}

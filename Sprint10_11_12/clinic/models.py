@@ -17,3 +17,13 @@ class Mascota(models.Model):
 
     def __str__(self):
         return f"{self.nombre} — {self.especie}"
+    
+
+class Cita(models.Model):
+    mascota     = models.ForeignKey(Mascota, on_delete=models.CASCADE, related_name='citas')
+    fecha       = models.DateTimeField()
+    motivo      = models.CharField(max_length=200)
+    diagnostico = models.CharField(max_length=200, blank=True)
+
+    def __str__(self):
+        return f"{self.mascota.nombre} @ {self.fecha:%Y-%m-%d %H:%M} - {self.motivo}"
