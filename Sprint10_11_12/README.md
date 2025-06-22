@@ -48,7 +48,7 @@ Manejo de Módulos independientes. Registramos los modelos en el panel de admini
    pip freeze > requirements.txt
    ```
 
-4. Aplica migraciones (tablas Django por defecto, aunque no se usan modelos propios):
+4. Aplica migraciones para modelos del aplicativo:
    ```bash
    python manage.py makemigrations clinic
    python manage.py migrate
@@ -152,8 +152,8 @@ Manejo de Módulos independientes. Registramos los modelos en el panel de admini
 | /owners/new/ | propietario_create | clinic/propietario_form.html |
 | /pets/       | mascota_list | clinic/mascota_list.html |
 | /pets/new/   | mascota_create | clinic/mascota_form.html |
-| /appointments/     | cita_list | clinic/mascota_form.html |
-| /appointments/new/ | cita_create | clinic/mascota_form.html |
+| /appointments/     | cita_list | clinic/cita_list.html |
+| /appointments/new/ | cita_create | clinic/cita_form.html |
 
 ---
 
@@ -162,6 +162,7 @@ Manejo de Módulos independientes. Registramos los modelos en el panel de admini
 * CSS básico en static/css/style.css.
 * Para agregar más estilos, modifica ese archivo o crea nuevas carpetas bajo static/.
 * Importación de libreria Bootstrap CDN
+* Importación de libreria Font Awesone CDN
 
 ---
 
