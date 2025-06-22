@@ -23,5 +23,6 @@ Este proyecto hace parte del desarrollo de ejercicios prácticos para el **Pytho
 | 8      | ✅ Ejercicio: Sistema Integral de Gestión para Veterinaria con Persistencia en SQLite  |
 | 10     | ✅ Ejercicio de Programación: Interfaz Web con Django (MVT)  |
 | 11     | ✅ Ejercicio de Programación: Persistencia con Django ORM  |
+| 12     | ✅ Ejercicio Interfaz Web con Django (MVT) y su ORM  |
 
 ---
