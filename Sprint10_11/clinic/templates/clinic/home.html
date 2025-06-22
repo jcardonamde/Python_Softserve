@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
 <html>
   {% load static %}
@@ -6,11 +7,13 @@
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+  {% block content %}
   <h1>¡Bienvenido a Clínica Veterinaria Amigos Peludos!</h1>
   <p>Tu mejor amigo, nuestra prioridad.</p>
   <nav>
     <a href="{% url 'services' %}">Servicios</a> |
     <a href="{% url 'placeholder' %}">Próximamente</a>
   </nav>
+  {% endblock %}
 </body>
 </html>

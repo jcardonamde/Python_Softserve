@@ -1,0 +1,16 @@
+# Activar el virtualenv
+cd Python_Softserve/Python_Softserve/Sprint10_11
+source venv/bin/activate   # o venv\Scripts\activate en Windows
+
+# Ejecutar en la raiz de la carpeta para correr el proyecto
+python manage.py runserver
+
+# Usuario configurado para consola admin
+artemis
+
+# Migraciones para crear tablas
+python manage.py makemigrations clinic
+python manage.py migrate
+
+# Crear superusuario para administrar BD
+python manage.py createsuperuser

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amigos Peludos</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <nav>
+    <a href="{% url 'home' %}">Inicio</a> |
+    <a href="{% url 'propietario_list' %}">Propietarios</a> |
+    <a href="{% url 'mascota_list' %}">Mascotas</a>
+  </nav>
+  <hr>
+  {% block content %}{% endblock %}
+</body>
+</html>
