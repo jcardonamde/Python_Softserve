@@ -24,5 +24,6 @@ Este proyecto hace parte del desarrollo de ejercicios prácticos para el **Pytho
 | 10     | ✅ Ejercicio de Programación: Interfaz Web con Django (MVT)  |
 | 11     | ✅ Ejercicio de Programación: Persistencia con Django ORM  |
 | 12     | ✅ Ejercicio Interfaz Web con Django (MVT) y su ORM  |
+| 13     | ✅ Ejercicio Funcionalidades Avanzadas para la Clínica Veterinaria  |
 
 ---
