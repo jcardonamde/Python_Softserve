@@ -54,6 +54,9 @@
             <li class="nav-item">
               <a class="nav-link" href="{% url 'services' %}">Servicios</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="{% url 'placeholder' %}">Próximamente</a>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="{% url 'propietario_list' %}">Dueños</a>
             </li>
@@ -62,6 +65,23 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'cita_list' %}">Citas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="menuClinica" role="button"
+                 data-bs-toggle="dropdown" aria-expanded="false">
+                Clínica
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="menuClinica">
+                <li><a class="dropdown-item" href="{% url 'medicamento_list' %}">Medicamentos</a></li>
+                <li><a class="dropdown-item" href="{% url 'cirugia_list' %}">Cirugías</a></li>
+                <li><a class="dropdown-item" href="{% url 'bitacora_list' %}">Bitácoras</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="{% url 'historia_index' %}">
+                  Historia Clínica
+                </a></li>
+                <li><a class="dropdown-item" href="{% url 'export_propietarios_csv' %}">Exportar Dueños (CSV)</a></li>
+                <li><a class="dropdown-item" href="{% url 'export_mascotas_csv' %}">Exportar Mascotas (CSV)</a></li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -72,7 +92,7 @@
     <main class="container my-5">{% block content %} {% endblock %}</main>
 
     <!-- Footer -->
-    <footer class="bg-secondary text-white text-center py-4 border-top border-white position-absolute bottom-0 start-0">
+    <footer class="bg-secondary text-white text-center py-4 mt-auto border-top border-white position-absolute bottom-0 start-0">
       <div class="container">
         <p class="mb-0">
           &copy; {{ now.year }} Clínica Veterinaria Amigos Peludos. Todos los

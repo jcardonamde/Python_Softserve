@@ -75,6 +75,10 @@ Manejo de Módulos independientes. Registramos los modelos en el panel de admini
    * http://127.0.0.1:8000/pets/new/    → Crear mascota
    * http://127.0.0.1:8000/appointments/ → Listado de citas
    * http://127.0.0.1:8000/appointments/new/ → Crear citas
+   * http://127.0.0.1:8000/medicines/ → CRUD de medicamentos
+   * http://127.0.0.1:8000/surgeries/ → CRUD de Cirugías
+   * http://127.0.0.1:8000/export/owners/ → Exportar propietarios en CSV
+   * http://127.0.0.1:8000/export/pets/ → Exportar mascotas en CSV
 
 
 8. 👀 Previews ORM:
@@ -95,13 +99,28 @@ Manejo de Módulos independientes. Registramos los modelos en el panel de admini
     │   │   └── clinic/
     │   │       ├── home.html
     │   │       ├── services.html
-    │   │       └── placeholder.html
-    │   │       └── mascota_form.html
-    │   │       └── mascota_list.html
-    │   │       └── propietario_form.html
-    │   │       └── propietario_list.html
-    │   │       └── cita_form.html
-    │   │       └── cita_list.html
+    │   │       ├── placeholder.html
+    │   │       ├── mascota_form.html
+    │   │       ├── mascota_list.html
+    │   │       ├── propietario_form.html
+    │   │       ├── propietario_list.html
+    │   │       ├── cita_form.html
+    │   │       ├── cita_list.html
+    │   │       ├── historia_index.html
+    │   │       ├── historia_clinica.html
+    │   │       └── error.html
+    │   │   └── medications/
+    │   │       ├── medicamento_list.html
+    │   │       ├── medicamento_form.html
+    │   │       └── medicamento_confirm_delete.html
+    │   │   └── surgeries/
+    │   │       ├── cirugia_list.html
+    │   │       ├── cirugia_form.html
+    │   │       └── cirugia_confirm_delete.html
+    │   │   └── logs/
+    │   │       ├── bitacora_list.html
+    │   │       ├── bitacora_form.html
+    │   │       └── bitacora_confirm_delete.html
     │   │   └── base.html
     │   │ 
     │   ├── urls.py         # Rutas de la app
@@ -161,8 +180,8 @@ Manejo de Módulos independientes. Registramos los modelos en el panel de admini
 
 * CSS básico en static/css/style.css.
 * Para agregar más estilos, modifica ese archivo o crea nuevas carpetas bajo static/.
-* Importación de libreria Bootstrap CDN
-* Importación de libreria Font Awesone CDN
+* Importación de libreria Bootstrap 5 CDN para layout, cards, tablas y formularios.
+* Importación de libreria Font Awesone CDN para iconos.
 
 ---
 

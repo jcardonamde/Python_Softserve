@@ -31,6 +31,7 @@ urlpatterns = [
     path('logs/<int:pk>/edit/', views.bitacora_update, name='bitacora_update'),
     path('logs/<int:pk>/delete/', views.bitacora_delete, name='bitacora_delete'),
     # Historia clínica
+    path('historia/', views.historia_index, name='historia_index'),
     path('history/<int:mascota_id>/', views.historia_clinica, name='historia_clinica'),
     # Exportaciones CSV
     path('export/owners/',   views.export_propietarios_csv, name='export_propietarios_csv'),

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-5">
+  <h2 class="mb-4">Selecciona una Mascota</h2>
+  {% if mascotas %}
+    <div class="list-group">
+      {% for pet in mascotas %}
+        <a href="{% url 'historia_clinica' pet.pk %}"
+           class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+          {{ pet.nombre }} ({{ pet.propietario.nombre }})
+          <i class="bi bi-chevron-right"></i>
+        </a>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="alert alert-info">No hay mascotas registradas.</div>
+  {% endif %}
+  <div class="mt-4">
+    <a href="{% url 'home' %}" class="btn btn-secondary">Volver al Inicio</a>
+  </div>
+</div>
+{% endblock %}

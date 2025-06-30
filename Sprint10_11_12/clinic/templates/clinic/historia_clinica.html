@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-5">
+  <h2>Historia Clínica de {{ mascota.nombre }}</h2>
+  <p><strong>Propietario:</strong> {{ mascota.propietario.nombre }}</p>
+  <hr>
+  {% for b in bitacoras %}
+    <div class="card mb-3">
+      <div class="card-header">
+        <span>{{ b.creada_en|date:"Y-m-d H:i" }}</span>
+        <span class="badge bg-secondary ms-2">Cita {{ b.cita.id }}</span>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Observación</h5>
+        <p class="card-text">{{ b.observacion }}</p>
+        {% if b.tratamiento %}
+        <h6>Tratamiento</h6>
+        <p>{{ b.tratamiento }}</p>
+        {% endif %}
+      </div>
+    </div>
+    <a href="{% url 'historia_index' %}" class="btn btn-secondary">
+      <i class="bi bi-arrow-left-circle me-1"></i> Regresar
+    </a>
+  {% empty %}
+    <div class="alert alert-info">No hay registros de bitácora.</div>
+  {% endfor %}
+</div>
+{% endblock %}

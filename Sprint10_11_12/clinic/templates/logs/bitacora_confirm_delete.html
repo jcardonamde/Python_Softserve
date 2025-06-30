@@ -2,12 +2,12 @@
 {% block content %}
 <div class="container my-5">
   <div class="alert alert-warning">
-    <h4>Eliminar Medicamento</h4>
-    <p>¿Seguro que deseas eliminar <strong>{{ medicamento.nombre }}</strong>?</p>
+    <h4>Eliminar Bitacora</h4>
+    <p>¿Seguro que deseas eliminar <strong>{{ bitacora.nombre }}</strong>?</p>
     <form method="post">
       {% csrf_token %}
       <button type="submit" class="btn btn-danger">Sí, eliminar</button>
-      <a href="{% url 'medicamento_list' %}" class="btn btn-secondary">Cancelar</a>
+      <a href="{% url 'bitacora_list' %}" class="btn btn-secondary">Cancelar</a>
     </form>
   </div>
 </div>

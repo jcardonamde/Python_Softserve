@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Medicamentos</h2>
+    <a href="{% url 'medicamento_create' %}" class="btn btn-success">
+      <i class="bi bi-plus-circle me-1"></i> Nuevo Medicamento
+    </a>
+  </div>
+
+  {% if medicamentos %}
+    <div class="table-responsive">
+      <table class="table table-striped table-hover align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Cantidad</th>
+            <th>Vencimiento</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for med in medicamentos %}
+          <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ med.nombre }}</td>
+            <td>{{ med.descripcion }}</td>
+            <td>{{ med.cantidad }}</td>
+            <td>{{ med.fecha_venc|date:"Y-m-d" }}</td>
+            <td>
+              <a href="{% url 'medicamento_update' med.pk %}" class="btn btn-sm btn-outline-warning me-1">
+                <i class="bi bi-pencil"></i>
+              </a>
+              <a href="{% url 'medicamento_delete' med.pk %}" class="btn btn-sm btn-outline-danger">
+                <i class="bi bi-trash"></i>
+              </a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <div class="alert alert-info">No hay medicamentos disponibles.</div>
+  {% endif %}
+</div>
+{% endblock %}

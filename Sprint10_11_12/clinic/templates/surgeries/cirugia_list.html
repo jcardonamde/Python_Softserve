@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Cirugías Programadas</h2>
+    <a href="{% url 'cirugia_create' %}" class="btn btn-success">
+      <i class="bi bi-plus-circle me-1"></i> Nueva Cirugía
+    </a>
+  </div>
+
+  {% if cirugias %}
+  <div class="table-responsive">
+    <table class="table table-striped table-hover align-middle">
+      <thead class="table-light">
+        <tr>
+          <th>#</th>
+          <th>Mascota</th>
+          <th>Veterinario</th>
+          <th>Fecha y Hora</th>
+          <th>Descripción</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for c in cirugias %}
+        <tr>
+          <td>{{ forloop.counter }}</td>
+          <td>{{ c.mascota.nombre }}</td>
+          <td>{{ c.veterinario }}</td>
+          <td>{{ c.fecha_plan|date:"Y-m-d H:i" }}</td>
+          <td>{{ c.descripcion|truncatechars:40 }}</td>
+          <td>
+            <a href="{% url 'cirugia_update' c.pk %}" class="btn btn-sm btn-outline-warning me-1">
+              <i class="bi bi-pencil"></i>
+            </a>
+            <a href="{% url 'cirugia_delete' c.pk %}" class="btn btn-sm btn-outline-danger">
+              <i class="bi bi-trash"></i>
+            </a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+    <div class="alert alert-info text-center">
+      No hay cirugías registradas.
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

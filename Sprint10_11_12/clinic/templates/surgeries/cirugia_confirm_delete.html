@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-5">
+  <div class="alert alert-warning">
+    <h4>Eliminar Cirugía</h4>
+    <p>¿Seguro que deseas eliminar la cirugía de <strong>{{ cirugia.mascota.nombre }}</strong> programada para <strong>{{ cirugia.fecha_plan|date:"Y-m-d H:i" }}</strong>?</p>
+    <form method="post">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+      <a href="{% url 'cirugia_list' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+  </div>
+</div>
+{% endblock %}
